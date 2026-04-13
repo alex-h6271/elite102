@@ -21,6 +21,7 @@
         "source=${localWorkspaceFolder}/data,target=/home/vscode/data,type=bind,consistency=cached"
     ],
     "forwardPorts": [],
-    "postCreateCommand": "apt-get update && apt-get install -y sqlite3 libsqlite3-dev && python3 -m venv .venv && . .venv/bin/activate && python -m pip install --upgrade pip && if [ -f requirements.txt ]; then pip install -r requirements.txt; fi",
+    "onCreateCommand": "apt-get update && apt-get install -y sqlite3 libsqlite3-dev",
+    "postCreateCommand": "python3 -m venv .venv && .venv/bin/pip install --upgrade pip && .venv/bin/pip install -r requirements.txt",
     "remoteUser": "vscode"
 }
