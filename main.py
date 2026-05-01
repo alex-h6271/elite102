@@ -141,7 +141,7 @@ def menu():
     while True:
         if current_user is None:
             print("\n" + "="*35)
-            print("         BANKING APP")
+            print("         JOE'S BANKING APP")
             print("="*35)
             print("1. Login")
             print("2. Create Account")
