@@ -176,7 +176,7 @@ def menu():
                 list_accounts()
 
             elif choice == "4":
-                print("\Shutting Down App...!\n")
+                print("\nShutting Down App...!\n")
                 break
 
             else:
@@ -216,7 +216,7 @@ def menu():
                     print("\nLogged out.")
 
                 elif choice == "5":
-                    print("\Shutting Down App...\n")
+                    print("\nShutting Down App...\n")
                     break
 
                 else:
