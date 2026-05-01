@@ -153,8 +153,8 @@ def menu():
 
             if choice == "1":
                 print("\n--- Login ---")
-                acc_num = input("Account Number:\n> ")
-                password = input("Password:\n> ")
+                acc_num = input("Account Number:\n ")
+                password = input("Password:\n ")
 
                 if verify_login(acc_num, password):
                     current_user = acc_num
@@ -164,9 +164,9 @@ def menu():
 
             elif choice == "2":
                 print("\n--- Create Account ---")
-                name = input("Name:\n> ")
-                password = input("Password:\n> ")
-                deposit_amt = float(input("Initial Deposit:\n> "))
+                name = input("Name:\n ")
+                password = input("Password:\n ")
+                deposit_amt = float(input("Initial Deposit:\n "))
                 create_account(name, password, deposit_amt)
                 
             elif choice == "3":
@@ -174,7 +174,7 @@ def menu():
                 list_accounts()
 
             elif choice == "4":
-                print("\nGoodbye!\n")
+                print("\Shutting Down App...!\n")
                 break
 
             else:
@@ -191,17 +191,17 @@ def menu():
             print("5. Exit")
             print("="*35)
 
-            choice = input("\nEnter your choice:\n> ").strip()
+            choice = input("\nEnter your choice:\n ").strip()
 
             try:
                 if choice == "1":
                     print("\n--- Deposit ---")
-                    amt = float(input("Amount:\n> "))
+                    amt = float(input("Amount:\n "))
                     deposit(current_user, amt)
 
                 elif choice == "2":
                     print("\n--- Withdraw ---")
-                    amt = float(input("Amount:\n> "))
+                    amt = float(input("Amount:\n "))
                     withdraw(current_user, amt)
 
                 elif choice == "3":
@@ -214,7 +214,7 @@ def menu():
                     print("\nLogged out.")
 
                 elif choice == "5":
-                    print("\nGoodbye!\n")
+                    print("\Shutting Down App...\n")
                     break
 
                 else:
